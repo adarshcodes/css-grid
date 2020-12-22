@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    // grid-template-columns: 1fr 1.2fr 1.5fr;
+    // grid-template-rows: 1fr 4fr 3fr 2fr;
+
+    grid-template-areas: 
+    "main main candy"
+    "main main header"
+    "nom yum header"
+    "dia dia header";
+    height: 100vh;
+    margin: 2em;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    background-color: #fffadf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nom {
+    grid-area: nom;
+    background-color: #f6f6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yum {
+    grid-area: yum;
+    background-color: skyblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diabeetus {
+    grid-area: dia;
+    background-color: rgba(23,35,78, .7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.candy {
+    grid-area: candy;
+    background-color:rgba(96,9,69, .5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    background-color: lightpink;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
